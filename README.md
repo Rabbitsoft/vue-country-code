@@ -32,9 +32,9 @@ Checkout Demo at [Github pages](https://hantrongbinh.github.io/vue-country-code/
   <template>
   ...
      <vue-country-code
-                    @onSelect="onSelect"
+                    @select="onSelect"
                     <!-- optional -->
-                    :preferredCountries="['vn', 'us', 'gb']">
+                    :preferred-countries="['vn', 'us', 'gb']">
      </vue-country-code>
   ...
   <template>
@@ -59,7 +59,7 @@ Checkout Demo at [Github pages](https://hantrongbinh.github.io/vue-country-code/
   ...
      <vue-country-code
                     ref="vcc"
-                    @onSelect="onSelect"
+                    @select="onSelect"
      </vue-country-code>
      <button @click="manualTrigger">Manual Trigger</button>
   ...
@@ -99,7 +99,7 @@ Checkout Demo at [Github pages](https://hantrongbinh.github.io/vue-country-code/
 
 | Property value | Arguments | Description                                                                                      |
 | -------------- | --------- | ------------------------------------------------------------------------------------------------ |
-| `onSelect`     | `Object`  | Fires when the input changes with the argument is the object includes `{ name, iso2, dialCode }` |
+| `select`     | `Object`  | Fires when the input changes with the argument is the object includes `{ name, iso2, dialCode }` |
 
 ## Highlights & Credits
 
