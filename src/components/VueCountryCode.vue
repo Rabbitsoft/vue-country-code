@@ -100,7 +100,7 @@ export default {
   },
   mounted() {
     this.initializeCountry();
-    this.$emit("onSelect", this.activeCountry);
+    this.$emit("select", this.activeCountry);
   },
   data() {
     return {
@@ -190,7 +190,7 @@ export default {
     },
     choose(country) {
       this.activeCountry = country;
-      this.$emit("onSelect", this.activeCountry);
+      this.$emit("select", this.activeCountry);
     },
     toggleDropdown() {
       if (this.disabled) {
